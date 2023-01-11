@@ -49,6 +49,7 @@ public class addteam extends hooks {
     }
     @Then("user verify addnewteam result")
     public void user_verify_addnewteam_result() {
+
         MobileElement success_addteam = (MobileElement) driver.findElement(addTeams.getResult());
         if (success_addteam.isDisplayed()) {
             after();

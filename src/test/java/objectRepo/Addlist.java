@@ -3,8 +3,8 @@ package objectRepo;
 import org.openqa.selenium.By;
 
 public class Addlist {
-    By list_team = By.xpath("//android.widget.Button[@content-desc=\"team Mobile\n" +
-            "team automation mobile staging cicle\"]");
+    By list_team = By.xpath("//android.widget.Button[@content-desc=\"teamA\n" +
+            "Team A : vika\"]");
     By menu_board = By.xpath("//android.widget.ImageView[@content-desc=\"Board\"]");
     By btn_iconplus = By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.Button");
     By form = By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View[1]/android.view.View");

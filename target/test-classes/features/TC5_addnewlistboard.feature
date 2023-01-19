@@ -1,7 +1,7 @@
 Feature: Add new List
   Scenario: User successfully add new list
     Given user is on app home
-    And user has company
+    And user has created company
     And user already has team
     When user click menu board
     And user click iconplus

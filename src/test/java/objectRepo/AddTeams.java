@@ -3,7 +3,7 @@ package objectRepo;
 import org.openqa.selenium.By;
 
 public class AddTeams {
-    By list_comp = By.xpath("(//android.view.View[@content-desc=\"testNovika\"])[1]");
+    By list_comp = By.xpath("//android.view.View[@content-desc=\"AUtoVika\"]");
     By btn_iconplus = By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.Button");
     By menu_addnewteam = By.xpath("//android.view.View[@content-desc=\"Add new team\"]");
     By field_teamname = By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View[1]/android.view.View/android.widget.EditText[1]");

@@ -21,7 +21,7 @@ public class addCompany extends  hooks{
         wait.until(ExpectedConditions.visibilityOfElementLocated(adcom.getDisplay_form()));
         MobileElement field_name = (MobileElement) driver.findElement(adcom.getField_compname());
         field_name.click();
-        field_name.sendKeys("testNovika");
+        field_name.sendKeys("Vika Baru");
     }
     @And("user input company desc")
     public void user_input_company_desc() {

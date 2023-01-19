@@ -18,19 +18,18 @@ public class home extends hooks {
     }
     @And("user has created company")
     public void user_has_created_company() {
-        MobileElement listcomp = (MobileElement) driver.findElement(company.getList_comp());
+        MobileElement listcomp = (MobileElement) wait.until(ExpectedConditions.visibilityOfElementLocated(company.getList_comp()));
         listcomp.click();
     }
     @And("user already has team")
     public void user_already_has_team() {
-        MobileElement listteam = (MobileElement) driver.findElement(team.getList_team());
+        MobileElement listteam = (MobileElement) wait.until(ExpectedConditions.visibilityOfElementLocated(team.getList_team()));
         listteam.isDisplayed();
         listteam.click();
     }
     @And("user already has list on board")
     public void user_already_has_list_on_board() {
-        wait.until(ExpectedConditions.elementToBeClickable(card.getBtn_menuboard()));
-        MobileElement menu_board = (MobileElement) driver.findElement(card.getBtn_menuboard());
+        MobileElement menu_board = (MobileElement) wait.until(ExpectedConditions.elementToBeClickable(card.getBtn_menuboard()));
         menu_board.isDisplayed();
         menu_board.click();
     }
